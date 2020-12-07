@@ -4,3 +4,5 @@
 # nodejs
 node_modules
 package-lock.json
+
+/config/token.ts
