@@ -1,0 +1,1 @@
+export const Donut_Bot_Token: string = "your token here"
