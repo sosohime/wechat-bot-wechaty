@@ -1,8 +1,7 @@
 import { Message, Wechaty } from 'wechaty'
 import { ScanStatus } from 'wechaty-puppet'
 import * as QrcodeTerminal from 'qrcode-terminal';
-
-const token = process.env.Donut_Bot_Token
+import token from '../config/token';
 
 const bot = new Wechaty({
   puppet: 'wechaty-puppet-hostie',
