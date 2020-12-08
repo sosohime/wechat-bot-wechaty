@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./dist/index.js",
+    "start": "node ./dist/main.js",
     "build": "tsc",
-    "dev": "ts-node ./service/index.ts"
+    "dev": "ts-node ./service/main.ts"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,11 @@
   },
   "homepage": "https://github.com/sosohime/wechat-bot-wechaty#readme",
   "dependencies": {
+    "axios": "^0.21.0",
+    "jsdom": "^16.4.0",
     "qrcode-terminal": "^0.12.0",
     "wechaty": "^0.51.8",
+    "wechaty-plugin-contrib": "^0.14.15",
     "wechaty-puppet": "^0.32.3"
   },
   "devDependencies": {

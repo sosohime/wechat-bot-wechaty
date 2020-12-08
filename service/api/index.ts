@@ -1,0 +1,1 @@
+export { lowIQMessage } from './LowIQTalk';
