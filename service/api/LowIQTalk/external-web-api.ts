@@ -2,6 +2,7 @@ import axios from 'axios';
 import { JSDOM } from 'jsdom';
 
 async function caihongpoi(): Promise<string> {
+    
     try{
         const res = await axios.get('https://chp.shadiao.app/api.php')
         
