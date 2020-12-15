@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./dist/main.js",
     "build": "tsc",
-    "dev": "ts-node ./service/main.ts"
+    "dev": "ts-node ./service/main.ts",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,9 @@
   },
   "homepage": "https://github.com/sosohime/wechat-bot-wechaty#readme",
   "dependencies": {
+    "@types/jsdom": "^16.2.5",
     "axios": "^0.21.0",
+    "file-box": "^0.16.4",
     "jsdom": "^16.4.0",
     "qrcode-terminal": "^0.12.0",
     "wechaty": "^0.51.8",
@@ -34,14 +37,51 @@
     "wechaty-puppet": "^0.32.3"
   },
   "devDependencies": {
+    "@chatie/tsconfig": "^0.10.1",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/node": "^14.14.10",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.2.0",
+    "husky": "^5.0.6",
+    "pinst": "^2.1.1",
     "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
     "ts-loader": "^8.0.11",
     "typescript": "^4.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "type-enum": [
+        2,
+        "always",
+        [
+          "chore",
+          "feat",
+          "fix",
+          "docs",
+          "style",
+          "refactor",
+          "test",
+          "ci",
+          "perf",
+          "revert",
+          "pages",
+          "posts"
+        ]
+      ]
+    }
   }
 }

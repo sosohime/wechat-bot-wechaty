@@ -32,7 +32,7 @@ async function dujitang():Promise<string> {
 
         const dom = new JSDOM(res.data);
 
-        const dujitang = dom.window.document.querySelector('#sentence').textContent
+        const dujitang = (dom.window.document.querySelector('#sentence') || {}).textContent
 
         return dujitang || '鸡汤熬不动了，歇一会'
     }catch(e) {
