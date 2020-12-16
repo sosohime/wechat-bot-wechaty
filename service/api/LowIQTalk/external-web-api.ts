@@ -3,7 +3,7 @@ import { JSDOM } from 'jsdom';
 
 async function caihongpoi(): Promise<string> {
     
-    try{
+    try {
         const res = await axios.get('https://chp.shadiao.app/api.php')
         
         return res.data || '彩虹屁获取异常'
