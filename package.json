@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./dist/main.js",
     "build": "tsc",
-    "dev": "ts-node ./service/main.ts",
-    "postinstall": "husky install"
+    "dev": "ts-node ./service/main.ts"
   },
   "repository": {
     "type": "git",
@@ -46,7 +45,7 @@
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.2.0",
-    "husky": "^5.0.6",
+    "husky": "^4.3.6",
     "pinst": "^2.1.1",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
