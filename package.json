@@ -33,7 +33,7 @@
     "qrcode-terminal": "^0.12.0",
     "wechaty": "^0.53.0",
     "wechaty-plugin-contrib": "^0.14.15",
-    "wechaty-puppet": "^0.32.3"
+    "wechaty-puppet": "^0.53.0"
   },
   "devDependencies": {
     "@chatie/tsconfig": "0.10.1",
