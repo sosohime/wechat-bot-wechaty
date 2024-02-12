@@ -27,7 +27,7 @@
   "homepage": "https://github.com/sosohime/wechat-bot-wechaty#readme",
   "dependencies": {
     "@types/jsdom": "^16.2.5",
-    "axios": "^0.27.0",
+    "axios": "^0.28.0",
     "file-box": "^0.16.4",
     "jsdom": "^16.4.0",
     "qrcode-terminal": "^0.12.0",
